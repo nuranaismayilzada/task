@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    padding: 0px 50px;
+}
+.navbar{
+    .last-side .icon{
+        display: none;
+    }
+    .left-side img{
+        display: none;
+    }
+    @media screen and (max-width:900px) {
+        .left-side img{
+            display: initial;
+            width: 140px;
+            height: 44px;
+        }
+        .left-side p{
+            display: none;
+        }
+        .main-side i{
+            display: none;
+        }
+        .third-side i{
+            display: none;
+        }
+        .last-side button{
+            display: none;
+        }
+        .last-side{
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+            cursor: pointer;
+        }
+        .last-side .icon{
+            display: initial;
+            width: 38px;
+            height: 38px;
+        }
+    }
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 58px;
+    background-color:white;
+    .left-side p{
+        font-family: visby cf, Sans-serif !important;
+        text-align: left;
+        color: #323232;
+        font-family: visby cf, Sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        -webkit-box-align: center;
+        line-height: 1.5em
+    }
+    .main-side{
+        display: flex;
+        flex-direction: row;
+        column-gap: 25px;
+        i{
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            transform: translateY(-10px);
+        }
+        i:hover {
+            transform: translateX(5px);
+            transform: translateZ(5px);
+        }
+        
+    }
+    .third-side{
+        cursor: pointer;
+    }
+    .last-side{
+        button{
+            font-family:"Visby CF", Sans-serif;
+            font-size: 18px;
+            border: none;
+            padding: 20px 40px;
+            color: #4A4A4A;
+            font-weight: 800;
+            background-color:#f9dd00;
+            -webkit-box-flex: 1;
+        }
+    }
+}
